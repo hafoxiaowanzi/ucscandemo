@@ -42,6 +42,18 @@
     <ClInclude Include="GM82009.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ntgraphctrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="_Picture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="_Font.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LedButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -62,6 +74,12 @@
     <ClCompile Include="GM82009.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ntgraphctrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LedButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="UCDeviceScan.rc">
@@ -70,6 +88,18 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="res\UCDeviceScan.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\LedGreen.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\LedRed.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\LedBlue.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\LedNone.ico">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

@@ -57,10 +57,10 @@ BOOL COpComm::OpenPort(LPTSTR strPortName, DWORD dwBaudRate,
 	PortDCB.StopBits = bStopBit;
 	PortDCB.fAbortOnError = TRUE;
 
-	/*
+	
 	//	Disable XON/XOFF on both input and output
 	PortDCB.fInX  = 0;
-	PortDCB.fOutX = 0;*/
+	PortDCB.fOutX = 0;
 
 	bPortReady = SetCommState(m_hCommPort, &PortDCB);
 	if(!bPortReady)
@@ -70,18 +70,17 @@ BOOL COpComm::OpenPort(LPTSTR strPortName, DWORD dwBaudRate,
 	if(!bPortReady)
 		return bPortReady;
 
-/*
 	PortTimeOuts.ReadIntervalTimeout = 50;
 	PortTimeOuts.ReadTotalTimeoutConstant = 50;
 	PortTimeOuts.ReadTotalTimeoutMultiplier = 10;
 	PortTimeOuts.WriteTotalTimeoutConstant = 50;
 	PortTimeOuts.WriteTotalTimeoutMultiplier = 10;
-*/
-	PortTimeOuts.ReadIntervalTimeout = 10;
-	PortTimeOuts.ReadTotalTimeoutConstant = 10;
-	PortTimeOuts.ReadTotalTimeoutMultiplier  = 30;		
-	PortTimeOuts.WriteTotalTimeoutConstant	 = 200;
-	PortTimeOuts.WriteTotalTimeoutMultiplier = 500;
+
+	//PortTimeOuts.ReadIntervalTimeout = 10;
+	//PortTimeOuts.ReadTotalTimeoutConstant = 10;
+	//PortTimeOuts.ReadTotalTimeoutMultiplier  = 30;		
+	//PortTimeOuts.WriteTotalTimeoutConstant	 = 200;
+	//PortTimeOuts.WriteTotalTimeoutMultiplier = 500;
 
 	bPortReady = SetCommTimeouts(m_hCommPort, &PortTimeOuts);
 	if(!bPortReady)

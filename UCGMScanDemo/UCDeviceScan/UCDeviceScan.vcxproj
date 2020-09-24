@@ -189,16 +189,22 @@
   <ItemGroup>
     <ClInclude Include="GCM83011Driver.h" />
     <ClInclude Include="GM82009.h" />
+    <ClInclude Include="LedButton.h" />
+    <ClInclude Include="ntgraphctrl.h" />
     <ClInclude Include="OpComm.h" />
     <ClInclude Include="UCDeviceScan.h" />
     <ClInclude Include="UCDeviceScanDlg.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="_Font.h" />
+    <ClInclude Include="_Picture.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GCM83011Driver.cpp" />
     <ClCompile Include="GM82009.cpp" />
+    <ClCompile Include="LedButton.cpp" />
+    <ClCompile Include="ntgraphctrl.cpp" />
     <ClCompile Include="OpComm.cpp" />
     <ClCompile Include="UCDeviceScan.cpp" />
     <ClCompile Include="UCDeviceScanDlg.cpp" />
@@ -216,6 +222,10 @@
     <None Include="res\UCDeviceScan.rc2" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="res\LedBlue.ico" />
+    <Image Include="res\LedGreen.ico" />
+    <Image Include="res\LedNone.ico" />
+    <Image Include="res\LedRed.ico" />
     <Image Include="res\UCDeviceScan.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
@@ -223,7 +233,7 @@
   </ImportGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties RESOURCE_FILE="UCDeviceScan.rc" />
+      <UserProperties _x007B_C9FE01C2-2746-479B-96AB-E0BE9931B018_x007D_="CNtgraphctrl1" RESOURCE_FILE="UCDeviceScan.rc" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

@@ -1,7 +1,7 @@
 #pragma once
 #include "OpComm.h"
 
-class GCM83011Driver:COpComm
+class GCM83011Driver:public COpComm
 {
 public:
 	GCM83011Driver();
